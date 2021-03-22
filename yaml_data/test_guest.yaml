@@ -1,0 +1,16 @@
+
+#旅客管理信息  配置参数
+
+#境外旅客预定人员的个人信息
+test_overseaGuest_reverse_overseaGuestInfoById:
+  - guestCode: 'G5001032020080519095900011'
+
+
+#旅客个人信息详情
+test_localguest_detail:
+  - cardNum: '370831197103170728'
+
+
+#境内旅客个人信息入住轨迹
+test_localguest_history:
+  - cardNum: '220122197303185329'

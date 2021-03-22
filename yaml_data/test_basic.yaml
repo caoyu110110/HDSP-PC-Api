@@ -1,0 +1,154 @@
+#基础信息请求 配置参数
+
+
+#网约房平台信息列表--根据平台全称搜索
+test_otainfo_list_unitName:
+  - unitName: '爱彼迎'
+    linkName: ''
+    linkCardNum: ''
+    linkPhone: ''
+    declareDateStart: ''
+    declareDateEnd: ''
+    page: ''
+    pageSize: ''
+
+#网约房平台信息列表--联系人证件号码搜索
+test_otainfo_list_linkCardNum:
+  - unitName: ''
+    linkName: ''
+    linkCardNum: '372328199006130615'
+    linkPhone: ''
+    declareDateStart: ''
+    declareDateEnd: ''
+    page: ''
+    pageSize: ''
+
+#网约房平台详细信息
+test_otainfo_detail:
+  otaCode: ''
+
+#房屋信息列表--根据门店名称搜索
+test_room_list_hotelName:
+  - psbUnit: ''
+    turonoutCodeList:
+      - ""
+    hotelName: '测试小屋'
+    registerTimeStart: ''
+    registerTimeEnd: ''
+    merchantPhone: ''
+    merchantCardNum: ''
+    merchantName: ''
+    roomNumMin: ''
+    roomNumMax: ''
+    bedNumMin: ''
+    bedNumMax: ''
+    hotelAddress: ''
+    isCancel: ''
+    isOpen: ''
+    uploadCodeList:
+      - ""
+    otaCodeList:
+      - ""
+    pageNum: ''
+    pageSize: ''
+
+
+#房屋信息编辑
+test_room_update:
+  - roomCode: 'R500103202008261516550001'
+    bedNum: '10'
+    roomName: '房屋ss'
+    streetName: '巴县衙门二巷'
+    buildingName: '2栋'
+    psbUnitCode: '500101000000'
+    building: '1'
+    roomNo: '2'
+    isOpen: '1`'
+    imgList:
+      - "http://172.26.236.68:8089/getPhoto?photoUrl=localPhoto/roomPhoto/82d9458799bdf7cb20201203174216.jpg"
+    unit: '2'
+    floor: '12'
+    iidd: 'd27a91287fda4a6a8a899b33babcd8b2'
+    streetCode: '500103000479'
+
+
+#查询房屋下的开锁记录
+test_room_unlock_logs:
+  - roomCode: 'R510104202007311417200001'
+    cardNum: ''
+    unlockTimeStart: ''
+    unlockTimeEnd: ''
+
+
+#删除房屋
+test_room_del:
+  - roomCode: 'R500103202009190051030001'
+    reason: '房屋信息重复'
+    delType: '3'
+
+#查询房屋核检查记录详情
+test_room_check_detail:
+  - iidd: '956124569'
+
+
+#重置房屋核查状态
+test_room_checkstate_reset:
+  - roomCode: 'R500103202007302253360001'
+    checkId: '956124569'
+    reason: '33333'
+
+#合并房屋
+test_room_merge:
+  - proomCode : '956124569'
+    sroomCodeList :
+      - "R500103202007302253360001"
+      - "R500103202010281513080001"
+
+#拆分房屋
+test_room_split:
+  - proomCode : '956124569'
+    sroomCodeList :
+      - "R500103202007302253360001"
+      - "R500103202010281513080001"
+
+
+#子房屋列表查询
+test_room_childs:
+  - roomCode: 'R500103202008261516550001'
+
+#房屋图片上传
+test_room_uploadimg:
+  - iidd: '37da74602cc611eba7b600163e0dcb94'
+    roomCode: 'R500103202008263316550001'
+    files: '../yaml_data/picture1.jpg'
+
+
+#门店旅客入住日历
+test_calendar_hotelCalendar:
+  - hotelCode: 'H500103202007301728190001'
+    year: '2020'
+    month: '1'
+
+#门店信息编辑
+test_hotel_merchant_update:
+  - hotelCode: 'H510104202007301138060001'
+    merchantName: '艾米莉1111'
+    merchantCardNum: '500381199304252922'
+    merchantPhone: '13637877554'
+    hotelAddress: '渝中区中山四路88号3栋1'
+
+#门店下所有房间的开锁记录
+test_hotel_rooms_unlock_logs:
+  - hotelCode: 'H510104202007301138060001'
+
+
+#门店下属房屋列表查询
+test_hotel_rooms:
+  - hotelCode: 'H510104202007301138060001'
+    psbUnit: '渝中区派出所'
+    turonoutCodeList:
+      - 'ssss'
+      - 'ssssss'
+    checkState: '1'
+    pageNum: '1'
+    pageSize: '1'
