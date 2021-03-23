@@ -60,4 +60,4 @@ class Adminweb(BaseApi):
 
 A = Adminweb()
 # 打印登录的token
-print(A.get_token())
+#print(A.get_token())

@@ -131,8 +131,11 @@ class TestBasic:
         """
         token = self.adminweb.get_token()
         roomCode = self.basic.room_list(token=token)['data']['list'][0]['roomCode']
+        iidd = self.basic.room_check_list(token=token)['data']['list'][0]['iidd']
         detail = self.basic.room_detail(token=token, roomCode=roomCode)
+
         assert detail['message'] == 'SUCCESS'
+
 
     @pytest.mark.parametrize('data', data['test_room_update'])
     def test_room_list(self, data):
